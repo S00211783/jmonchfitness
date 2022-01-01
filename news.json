@@ -1,0 +1,26 @@
+{
+	"news": [
+		{
+			"title": "Title 1",
+			"subject": "Subject",
+			"content": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"author": "Jack Moran"
+		},
+		{
+			"title": "Title 2",
+			"subject": "Subject",
+			"content": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"author": "Jack Moran"
+		},
+		{
+			"title": "Title 3",
+			"subject": "Subject",
+			"content": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"author": "Jack Moran"
+		}
+	]
+
+}
