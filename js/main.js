@@ -43,3 +43,30 @@ function formatNews(data){
         cardBody.appendChild(author);
     })
 }
+function getFaq(){
+    fetch("./faq.json")
+        .then(response => {
+            return response.json();
+        })
+        .then(data => formatFaq(data));
+}
+function formatFaq(data){
+    let questionOne = document.getElementById('questionOne');
+    let questionTwo = document.getElementById('questionTwo');
+    let questionThree = document.getElementById('questionThree');
+    let answerOne = document.getElementById('answerOne');
+    let answerTwo = document.getElementById('answerTwo');
+    let answerThree = document.getElementById('answerThree');
+    questionOne.innerText = data.faq[0].question;
+    questionTwo.innerText = data.faq[1].question;
+    questionThree.innerText = data.faq[2].question;
+    let p = document.createElement('p');
+    p.innerHTML = data.faq[0].answer;
+    answerOne.appendChild(p);
+    let p2 = document.createElement('p');
+    p2.innerHTML = data.faq[1].answer;
+    answerTwo.appendChild(p2);
+    let p3 = document.createElement('p');
+    p3.innerHTML = data.faq[2].answer;
+    answerThree.appendChild(p3);
+}

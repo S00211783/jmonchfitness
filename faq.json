@@ -1,0 +1,17 @@
+{
+  "faq": [
+    {
+      "question": "Question 1",
+      "answer": "This is the answer to the above question"
+    },
+    {
+      "question": "Question 2",
+      "answer": "This is the answer to the above question"
+    },
+    {
+      "question": "Question 3",
+      "answer": "This is the answer to the above question"
+    }
+  ]
+
+}

@@ -46,45 +46,67 @@
     </div>
 </nav>
 <!-- Main Content -->
-    <!-- Banner -->
-    <img src="img/banner1.png" class="img-fluid" alt="...">
-    <!-- Welcome Message -->
-    <div class="m-3">
-        <h2 class="text-center m-2" id="welcome-head">Welcome To JMonch Fitness</h2>
-        <p class=" text-center mx-5 mt-3">Enter Welcome Message Here ....</p>
-    </div>
-    <!-- Quote -->
-    <div class="card text-dark bg-info m-5 text-center">
-        <div class="card-header">
-            Quote
-        </div>
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>All the money in the world can't buy you back good health.</p>
-                <footer class="blockquote-footer"><cite title="Source Title">Reba Mcentire</cite></footer>
-            </blockquote>
-        </div>
-    </div>
-    <!-- News -->
-    <h2 class="text-center m-5" id="news-head"> Latest News</h2>
-    <div id="news-div" class="row align-items-center text-center">
-        <!-- Gets Filled From JavaScript Please Refer To news.json To Make Any Changes -->
-    </div>
-    <!-- Instagram Plug -->
-    <div class="m-5">
-        <div class="row g-0">
-            <div class="col-md-4 text-end">
-                <img src="img/instagramlogo.jpg" width="300" height="300" class="img-fluid rounded-start" alt="...">
+    <!-- Contact Title -->
+    <h1 class="text-center mb-5" id="contact-head">Contact Us</h1>
+    <!-- Contact Form -->
+    <div class=" d-flex justify-content-center">
+        <form class="w-50 text-center" action="contact.php" method="post">
+            <div class="mb-3">
+                <label for="contactInputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="contactInputEmail" name="email">
             </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Follow My Instagram</h5>
-                    <p class="card-text">Make Sure To Go Follow My Instagram To Get Tips On Eating And Exercises</p>
-                    <a class="btn btn-primary" href="https://www.instagram.com/jmonchftiness/" target="_blank">Go To Instagram</a>
+            <div class="mb-3">
+                <label for="contactInputSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="contactInputSubject" name="subject">
+            </div>
+            <div class="mb-3">
+                <label for="contactInputMessage" class="form-label">Message</label>
+                <textarea type="" class="form-control" id="contactInputMessage" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+    <!-- FAQ -->
+<h2 class="text-center m-4"> FAQ</h2>
+    <div class="accordion m-5" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="questionOne">
+
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="answerOne">
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="questionTwo">
+
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="answerTwo">
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="questionThree">
+
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="answerThree">
+
                 </div>
             </div>
         </div>
     </div>
+
 <!-- Footer -->
 <div id="footer-div" class="mt-3">
     <div id="footer-cols" class="row align-items-start text-center">
@@ -131,6 +153,6 @@
 <!-- Custom Scripting -->
 <script src="js/main.js"></script>
 <script>
-    window.onload = getNews();
+ window.onload = getFaq();
 </script>
 </html>
