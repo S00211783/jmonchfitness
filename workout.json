@@ -1,0 +1,61 @@
+{
+	"plans": [
+		{
+			"title": "Plan 1",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 2",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 3",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 4",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 5",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 6",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 7",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		},
+		{
+			"title": "Plan 8",
+			"description": "This is some dummy text to fill out the box",
+			"img_url": "img/dummyImg.png",
+			"stripe_url": "https://buy.stripe.com/test_3cs4hE7vmbmD16U4gg",
+			"price": "€10.00"
+		}
+	]
+
+}

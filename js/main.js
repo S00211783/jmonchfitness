@@ -70,3 +70,51 @@ function formatFaq(data){
     p3.innerHTML = data.faq[2].answer;
     answerThree.appendChild(p3);
 }
+function getPlans(cat){
+    fetch("./" + cat + ".json")
+        .then(response => {
+            return response.json();
+        })
+        .then(data => formatPlans(data, cat));
+}
+function formatPlans(data, cat){
+    let mainDiv = document.getElementById(cat);
+    data.plans.forEach( one =>
+    {
+        //Creating Card
+        let colDiv = document.createElement('div');
+        colDiv.classList.add('col');
+        let cardDiv = document.createElement('div');
+        cardDiv.classList.add('card');
+        let cardImg = document.createElement('img');
+        cardImg.setAttribute('src', one.img_url);
+        let cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+        let title = document.createElement('h5');
+        title.classList.add('card-title');
+        title.innerHTML = one.title;
+        let description = document.createElement('p');
+        description.classList.add('card-text');
+        description.innerHTML = one.description;
+        let price = document.createElement('p');
+        price.classList.add('card-text');
+        price.innerHTML = one.price;
+        let buyButton = document.createElement('a');
+        buyButton.classList.add('card-text');
+        buyButton.classList.add('btn');
+        buyButton.classList.add('btn-info');
+        buyButton.innerHTML = 'Buy Plan'
+        buyButton.setAttribute('href',one.stripe_url);
+        buyButton.setAttribute('target','_blank');
+
+        //Child Appends
+        mainDiv.appendChild(colDiv);
+        colDiv.appendChild(cardDiv);
+        cardDiv.appendChild(cardImg);
+        cardDiv.appendChild(cardBody);
+        cardBody.appendChild(title);
+        cardBody.appendChild(description);
+        cardBody.appendChild(price);
+        cardBody.appendChild(buyButton);
+    })
+}
